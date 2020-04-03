@@ -20,8 +20,17 @@ namespace AK
     namespace BUSSES
     {
         static const AkUniqueID MASTER_AUDIO_BUS = 3803692087U;
-        static const AkUniqueID MOTION_FACTORY_BUS = 985987111U;
+        static const AkUniqueID MUSIC = 3991942870U;
+        static const AkUniqueID SFX = 393239870U;
     } // namespace BUSSES
+
+    namespace AUX_BUSSES
+    {
+        static const AkUniqueID LARGE = 4284352190U;
+        static const AkUniqueID MEDIUM = 2849147824U;
+        static const AkUniqueID SMALL = 1846755610U;
+        static const AkUniqueID VERB = 3657263530U;
+    } // namespace AUX_BUSSES
 
     namespace AUDIO_DEVICES
     {

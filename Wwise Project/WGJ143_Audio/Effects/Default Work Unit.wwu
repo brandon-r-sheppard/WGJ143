@@ -1,6 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{214875EA-F807-4597-B923-B7D118FB0018}" SchemaVersion="97">
 	<Effects>
-		<WorkUnit Name="Default Work Unit" ID="{214875EA-F807-4597-B923-B7D118FB0018}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{214875EA-F807-4597-B923-B7D118FB0018}" PersistMode="Standalone">
+			<ChildrenList>
+				<Effect Name="New_Wwise_RoomVerb_Med" ID="{23713120-CF6D-40BA-8245-966FE756B52D}" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+					<PropertyList>
+						<Property Name="DecayTime" Type="Real32" Value="2.2"/>
+						<Property Name="ERPattern" Type="int32" Value="13"/>
+					</PropertyList>
+				</Effect>
+				<Effect Name="New_Wwise_RoomVerb_Large" ID="{3094E999-EA06-4C0A-BC23-2BC36E9A3B9E}" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+					<PropertyList>
+						<Property Name="DecayTime" Type="Real32" Value="3.1"/>
+					</PropertyList>
+				</Effect>
+				<Effect Name="New_Wwise_RoomVerb_Small" ID="{3EA5804D-A089-476E-BB6C-31762FD7BBF9}" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+					<PropertyList>
+						<Property Name="ERPattern" Type="int32" Value="22"/>
+					</PropertyList>
+				</Effect>
+			</ChildrenList>
+		</WorkUnit>
 	</Effects>
 </WwiseDocument>

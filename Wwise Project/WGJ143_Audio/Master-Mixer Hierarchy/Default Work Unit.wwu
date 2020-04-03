@@ -9,13 +9,35 @@
 							<ObjectRef Name="System" ID="{D2A15F23-0B7F-484A-B335-92E135C9E5F3}" WorkUnitID="{3FFE7FB9-1402-40A7-98CB-7C21815FE3DA}"/>
 						</Reference>
 					</ReferenceList>
-				</Bus>
-				<Bus Name="Motion Factory Bus" ID="{2AF9B9C6-6EF1-46E9-B5F2-E30C9E602C74}">
-					<ReferenceList>
-						<Reference Name="AudioDevice">
-							<ObjectRef Name="Default_Motion_Device" ID="{FB3125C2-B625-46FF-ACFA-A87A8489A459}" WorkUnitID="{3FFE7FB9-1402-40A7-98CB-7C21815FE3DA}"/>
-						</Reference>
-					</ReferenceList>
+					<ChildrenList>
+						<Bus Name="SFX" ID="{9FDBDD76-2E07-4F0E-B75C-15659E6F80C3}"/>
+						<Bus Name="Music" ID="{49C2772F-55DF-4AB1-98D7-7D4B53FFDCCC}"/>
+						<AuxBus Name="Verb" ID="{C68C2A4D-19EA-4F93-B757-93BC33BC7622}">
+							<ChildrenList>
+								<AuxBus Name="Small" ID="{5E7CFCBC-49FE-418D-B3A4-A827953AB11D}">
+									<ReferenceList>
+										<Reference Name="Effect0" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+											<ObjectRef Name="New_Wwise_RoomVerb_Small" ID="{3EA5804D-A089-476E-BB6C-31762FD7BBF9}" WorkUnitID="{214875EA-F807-4597-B923-B7D118FB0018}"/>
+										</Reference>
+									</ReferenceList>
+								</AuxBus>
+								<AuxBus Name="Medium" ID="{DB29A19B-2ED9-485B-9EC8-EC20058C93EA}">
+									<ReferenceList>
+										<Reference Name="Effect0" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+											<ObjectRef Name="New_Wwise_RoomVerb_Med" ID="{23713120-CF6D-40BA-8245-966FE756B52D}" WorkUnitID="{214875EA-F807-4597-B923-B7D118FB0018}"/>
+										</Reference>
+									</ReferenceList>
+								</AuxBus>
+								<AuxBus Name="Large" ID="{ACAC6A6A-8512-4C6E-8E8F-C73FC3F95C76}">
+									<ReferenceList>
+										<Reference Name="Effect0" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+											<ObjectRef Name="New_Wwise_RoomVerb_Large" ID="{3094E999-EA06-4C0A-BC23-2BC36E9A3B9E}" WorkUnitID="{214875EA-F807-4597-B923-B7D118FB0018}"/>
+										</Reference>
+									</ReferenceList>
+								</AuxBus>
+							</ChildrenList>
+						</AuxBus>
+					</ChildrenList>
 				</Bus>
 			</ChildrenList>
 		</WorkUnit>
