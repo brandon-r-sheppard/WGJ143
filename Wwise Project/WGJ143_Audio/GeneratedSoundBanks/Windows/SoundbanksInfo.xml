@@ -15,9 +15,6 @@
 			<ObjectPath>\SoundBanks\Default Work Unit\General</ObjectPath>
 			<ShortName>General</ShortName>
 			<Path>General.bnk</Path>
-			<IncludedEvents>
-				<Event Id="4258653052" Name="test_event" ObjectPath="\Events\Default Work Unit\test_event" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
-			</IncludedEvents>
 		</SoundBank>
 		<SoundBank Id="1355168291" Language="SFX">
 			<ObjectPath>Init</ObjectPath>
